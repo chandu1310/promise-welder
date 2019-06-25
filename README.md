@@ -11,6 +11,7 @@ Has the following utilities to use:
 PromiseChain: This handy utility lets you chain functions which have inter dependency and return Promise which drives the next function in the chain. An initial state is provided as part of the call.
 Usage Example:
 
+```
 const A = ({ x }) => Promise.resolve({ y: x*x });
 const B = ({ y }) => Promise.resolve({ z: y*2 });
 const C = ({ z }) => Promise.resolve(z*10);
@@ -30,6 +31,7 @@ Promise.chainAll( [A, B, C], {x:2} ).then(console.log);
 
 Result:
 80
+```
 
 ## Credits
 [Chandra Shekar Chennamsetty](https://github.com/chandu1310)
