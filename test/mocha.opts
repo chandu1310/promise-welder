@@ -1,4 +1,0 @@
---recursive
-test/setup
-src/**/*spec.js
-test/**/*spec.js
