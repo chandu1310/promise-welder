@@ -1,6 +1,6 @@
 {
   "name": "promise-welder",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Promise-Welder is a promise chaining/reducing utility.",
   "repository": {
     "type": "git",
