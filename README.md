@@ -18,14 +18,15 @@ PromiseChain: This handy utility lets you chain functions which have inter depen
 Usage Example:
 
 ```
+const { PromiseChain } = require('promise-welder');
+
 const A = ({ x }) => Promise.resolve({ y: x*x });
 const B = ({ y }) => Promise.resolve({ z: y*2 });
 const C = ({ z }) => Promise.resolve(z*10);
 
-Promise.chainAll( [A, B, C], {x:2} ).then(console.log);
+PromiseChain( [A, B, C], {x:2} ).then(console.log);
 
-Result:
-80
+Output: 80
 ```
 
 ## Credits
